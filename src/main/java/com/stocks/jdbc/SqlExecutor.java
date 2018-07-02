@@ -11,15 +11,15 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class SqlFileExecutor {
+public class SqlExecutor {
 
     private final DataSource dataSource;
 
-    public SqlFileExecutor() {
+    public SqlExecutor() {
         this.dataSource = createDataSource();
     }
 
-    public SqlFileExecutor(DataSource dataSource) {
+    public SqlExecutor(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
